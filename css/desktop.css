@@ -1,0 +1,226 @@
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/*----------------------------------------------------------------------*/
+/*Sección cabecera*/
+
+.cabecera {
+    margin: 1.6rem 10.8rem;
+    display: flex;
+}
+
+.cabecera .barra-navegacion{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecera .barra-navegacion ul {
+    display: flex;
+    width: 600px;
+    justify-content: space-evenly;
+}
+
+.cabecera .barra-navegacion .item-menu-contacto-separado {
+    display: none;
+}
+
+/*----------------------------------------------------------------------*/
+/*Sección título*/
+
+.titulo {
+    margin-left: 10.8rem;
+    margin-right: 10.8rem;
+}
+
+.titulo-divisor {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo .titulo-divisor .titulo-contenedor {
+    width: 47vw;
+}
+
+.titulo .titulo-divisor .titulo-contenedor .titulo-biografia{
+    font-size: 5.2rem;
+}
+
+.titulo .titulo-divisor .titulo-contenedor .titulo-descripcion{
+    font-size: 2.2rem;
+}
+
+.titulo .titulo-divisor .titulo-contenedor .titulo-redes{
+    font-size: 1.6rem;
+    font-weight:lighter;
+}
+
+.titulo .titulo-divisor .titulo-perfil {
+    box-sizing: initial;
+    width: 30vw;
+    height: fit-content;
+}
+
+/*----------------------------------------------------------------------*/
+
+.acerca {
+    padding-left: 10.8rem;
+    padding-right: 10.8rem;
+}
+
+.acerca .acerca-contenedor .acerca-titulo {
+    font-size: 3.2rem;
+}
+
+/*----------------------------------------------------------------------*/
+.skills {
+    margin-left: 10.8rem;
+    margin-right: 10.8rem;
+}
+
+.skills .skills-titulo {
+    font-size: 3.2rem;
+}
+
+.skills .skills-parrilla .skills-caja {
+    width: 11vw;
+}
+
+.skills .skills-parrilla .skills-caja:nth-child(1) {
+    margin-left: 0rem;
+}
+
+.skills .skills-parrilla .skills-caja:nth-child(6) {
+    margin-right: 0rem;
+}
+
+/*----------------------------------------------------------------------*/
+
+.hobbies {
+    margin-left: 10.8rem;
+    margin-right: 10.8rem;
+    margin-bottom: 4.1rem;
+}
+
+.hobbies .hobbies-titulo {
+    font-size: 3.2rem;
+}
+
+.hobbies .hobbies-parrilla .hobbies-caja {
+    width: 11vw;
+}
+
+.hobbies .hobbies-parrilla .hobbies-caja:nth-child(2n+1) {
+    margin-right: 0.8rem;
+}
+
+.hobbies .hobbies-parrilla .hobbies-caja:nth-child(2n) {
+    margin-left: 0.8rem;
+}
+
+/*----------------------------------------------------------------------*/
+
+.formacion {
+    padding-left: 10.8rem;
+    padding-right: 10.8rem;
+    padding-bottom: 8.2rem;
+    padding-top: 8.2rem;
+}
+
+.formacion .formacion-titulo {
+    font-size: 3.2rem;
+}
+
+.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-imagen {
+    height: 28.6rem;
+}
+
+.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-imagen img {
+    width: 15rem;
+    height: auto;
+}
+
+.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-caja-titulo h4{
+    font-size: 2.2rem;
+}
+
+/*----------------------------------------------------------------------*/
+
+.experiencia {
+    padding-left: 10.8rem;
+    padding-right: 10.8rem;
+}
+
+.experiencia .experiencia-titulo {
+    font-size: 3.2rem;
+}
+
+.experiencia .experiencia-caja {
+    display:flex;
+    align-items: center;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.experiencia .experiencia-caja:nth-child(2n+1){
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.experiencia .experiencia-caja:nth-child(2n+1) .experiencia-informacion {
+    margin-left: 0;
+}
+
+.experiencia .experiencia-caja .experiencia-imagen{
+    width: 56vw;
+
+}
+
+.experiencia .experiencia-caja .experiencia-informacion {
+    width: 19vw;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.2rem;
+}
+
+/*-------------------------------------------------------------------------*/
+
+.formulario {
+    padding: 10.8rem;
+}
+
+.formulario .formulario-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formulario .formulario-contenedor .formulario-texto {
+    display: inline;
+    width: 55%;
+}
+
+.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-input {
+    font-size: 1.2rem;
+    color: #A2A2A2;
+}
+
+.formulario .formulario-contenedor .formulario-texto .formulario-titulo {
+    font-size: 3.2rem;
+}
+
+.formulario .formulario-contenedor .formulario-imagen-contenedor {
+    display: inline;
+    width: 43%;
+}
+
+.formulario .formulario-contenedor .formulario-imagen-contenedor > img {
+    width: 100%;
+    height: 54.6rem;
+}

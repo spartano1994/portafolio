@@ -1,0 +1,122 @@
+
+/*----------------------------------------------------------------------*/
+/*Sección cabecera*/
+
+.cabecera {
+    margin: 1.6rem 3.2rem;
+    display: flex;
+}
+
+.cabecera .nombre-portafolio {
+    display: flex;
+    align-items: center;
+}
+
+.cabecera .barra-navegacion .item-menu-contacto-separado {
+    font-weight: bold;
+}
+
+
+/*----------------------------------------------------------------------*/
+/*Sección título*/
+
+.titulo {
+    padding: 1.6rem 0rem;
+    margin: 0rem 3.2rem;
+    margin-bottom: 3.2rem;
+}
+
+.titulo .titulo-divisor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.titulo .titulo-divisor .titulo-perfil {
+    display: inline-block;
+    width: 19vw;
+    height: fit-content;
+    border-radius: 50%;
+}
+
+.titulo .titulo-divisor .titulo-contenedor {
+    width: 70vw;
+}
+
+
+/*----------------------------------------------------------------------*/
+
+.acerca {
+    padding: 3.2rem;
+}
+
+/*----------------------------------------------------------------------*/
+
+.skills {
+    margin-left: 3.2rem;
+    margin-right: 3.2rem;
+}
+
+.skills .skills-parrilla .skills-caja {
+    margin: 0.8rem;
+    margin-bottom: 3.2rem;
+    width: 25vw;
+    height: 11.8rem;
+}
+
+/*----------------------------------------------------------------------*/
+
+.hobbies {
+    margin-left: 3.2rem;
+    margin-right: 3.2rem;
+}
+
+.hobbies .hobbies-parrilla .hobbies-caja {
+    margin: 0.8rem;
+    margin-bottom: 3.2rem;
+    width: 25vw;
+    height: 11.8rem;
+}
+
+.hobbies .hobbies-parrilla .hobbies-caja:nth-child(3n-2){
+    margin-left: 0;
+}
+
+.hobbies .hobbies-parrilla .hobbies-caja:nth-child(3n){
+    margin-right: 0;
+}
+
+
+/*----------------------------------------------------------------------*/
+
+.formacion .formacion-parrilla {
+    display: flex;
+}
+
+.formacion .formacion-parrilla .formacion-caja:nth-child(2){
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+}
+
+.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-imagen img {
+    width: 7rem;
+    height: auto;
+}
+
+
+/*----------------------------------------------------------------------*/
+
+.experiencia .experiencia-caja .experiencia-imagen{
+    margin-top: 1.6rem;
+}
+
+.experiencia .experiencia-caja .experiencia-informacion .experiencia-caja-titulo {
+    margin-top: 1.2rem;
+}
+
+/*----------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------*/
