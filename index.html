@@ -41,7 +41,12 @@
             <!--Sección de presentación-->
             <section class="titulo" id="title">
                 <div class="titulo-divisor">
-                    <img class="titulo-perfil" src="assets\profile.jpg" title="Gerardo González García" , alt="Imagen de perfil de Gerardo">
+                    <picture >
+                        <source media="(min-width:1024px)" srcset="./assets/profile.jpg" />
+                        <source media="(min-width:768px)" srcset="./assets/profile-tablet.jpg" />
+                        <img class="titulo-perfil" src="./assets/profile-mobile.jpg" title="Gerardo González García" , alt="Imagen de perfil de Gerardo">
+                    </picture>
+                    
                     <div class="titulo-contenedor">
                         <h2 class="titulo-biografia">Hola, mi nombre es Gerardo y construyo paginas web</h2>
                         <h3 class="titulo-descripcion">Soy estudiante de física en la Universidad Nacional Autónoma de México y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
