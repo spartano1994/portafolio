@@ -70,6 +70,9 @@ a{
 .titulo {
     box-sizing: border-box;
     padding: 1.6rem;
+    background-image: url(../assets/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .titulo .titulo-divisor .titulo-perfil {
@@ -328,6 +331,12 @@ a{
     font-size: 2.2rem;
     color: #464646;
     flex-grow: 1;
+}
+
+        /*Ocultas 3 cajas*/
+.experiencia .experiencia-caja:nth-child(n+3) {
+    display: none;
+
 }
 
 .experiencia .experiencia-caja .experiencia-imagen{

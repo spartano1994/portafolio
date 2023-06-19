@@ -31,8 +31,9 @@ html {
 /*Sección título*/
 
 .titulo {
-    margin-left: 10.8rem;
-    margin-right: 10.8rem;
+    padding-left: 10.8rem;
+    padding-right: 10.8rem;
+    margin: 0;
 }
 
 .titulo-divisor {
@@ -86,6 +87,14 @@ html {
 
 .skills .skills-parrilla .skills-caja {
     width: 11vw;
+    transition: 0.3s all;
+}
+
+.skills .skills-parrilla .skills-caja:hover {
+    position: relative;
+    height: 12.6rem;
+    margin-bottom: 2.4rem;
+    margin-top: 0.4rem;
 }
 
 .skills .skills-parrilla .skills-caja:nth-child(1) {
@@ -110,6 +119,14 @@ html {
 
 .hobbies .hobbies-parrilla .hobbies-caja {
     width: 11vw;
+    transition: 0.3s all;
+}
+
+.hobbies .hobbies-parrilla .hobbies-caja:hover {
+    position: relative;
+    height: 12.6rem;
+    margin-bottom: 2.4rem;
+    margin-top: 0.4rem;
 }
 
 .hobbies .hobbies-parrilla .hobbies-caja:nth-child(2n+1) {
@@ -189,6 +206,37 @@ html {
     margin-bottom: 3.2rem;
 }
 
+
+.experiencia .experiencia-informacion .experiencia-descripcion .experiencia-repositorio .experiencia-boton-repositorio{
+    transition: 0.3s all;
+}
+
+.experiencia .experiencia-informacion .experiencia-descripcion .experiencia-repositorio .experiencia-boton-repositorio:hover {
+    color: #2A7AE4;
+    border-color:#2A7AE4;
+    background: #e2e2e2;
+}
+
+.experiencia .experiencia-informacion .experiencia-descripcion .experiencia-repositorio .experiencia-boton-repositorio:active {
+    color: white;
+    border-color:black;
+    background: black;
+}
+
+.experiencia .experiencia-informacion .experiencia-descripcion .experiencia-demo .experiencia-boton-demo {
+    transition: 0.3s all;
+}
+
+
+.experiencia .experiencia-informacion .experiencia-descripcion .experiencia-demo .experiencia-boton-demo:hover {
+    background: #1965c9;
+}
+ 
+.experiencia .experiencia-informacion .experiencia-descripcion .experiencia-demo .experiencia-boton-demo:active {
+    color: white;
+    border-color:black;
+    background: black;
+}
 /*-------------------------------------------------------------------------*/
 
 .formulario {
@@ -223,4 +271,18 @@ html {
 .formulario .formulario-contenedor .formulario-imagen-contenedor > img {
     width: 100%;
     height: 54.6rem;
+}
+
+.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-enviar {
+    transition: 0.3s all;
+}
+
+.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-enviar:hover {
+    background: #1965c9;
+}
+ 
+.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-enviar:active {
+    color: white;
+    border-color:black;
+    background: black;
 }
