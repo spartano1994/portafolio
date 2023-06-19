@@ -209,6 +209,7 @@ html {
 
 .experiencia .experiencia-informacion .experiencia-descripcion .experiencia-repositorio .experiencia-boton-repositorio{
     transition: 0.3s all;
+    cursor: pointer;
 }
 
 .experiencia .experiencia-informacion .experiencia-descripcion .experiencia-repositorio .experiencia-boton-repositorio:hover {
@@ -225,6 +226,7 @@ html {
 
 .experiencia .experiencia-informacion .experiencia-descripcion .experiencia-demo .experiencia-boton-demo {
     transition: 0.3s all;
+    cursor: pointer;
 }
 
 
@@ -275,6 +277,7 @@ html {
 
 .formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-enviar {
     transition: 0.3s all;
+    cursor: pointer;
 }
 
 .formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-enviar:hover {

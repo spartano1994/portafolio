@@ -426,7 +426,12 @@ a{
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;
     font-family: 'Raleway';
-    color: #A2A2A2;
+    color: black;
+    background: white;
+}
+
+.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-input:focus {
+    border-bottom: #2A7AE4;
 }
 
 .formulario .formulario-contenedor .formulario-texto .formulario-datos .span-nombre {
@@ -478,11 +483,17 @@ a{
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;
     resize: none;
+    font-family: "Raleway";
 }
 
 .formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-area::placeholder {
     font-family: 'Raleway';
     color: #A2A2A2;
+}
+
+main .formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-area:focus{
+    outline: none;
+    border: 1px solid #2A7AE4;
 }
 
 .formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-enviar {
