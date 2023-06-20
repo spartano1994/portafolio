@@ -22,6 +22,7 @@ body {
     font-family: 'Raleway';
     box-shadow: darkgray;
 }
+
 ol, ul,li {
     list-style: none;
 }
@@ -63,6 +64,10 @@ a{
 
 .cabecera .barra-navegacion .item-menu a {
     font-size: 1.4rem;
+}
+
+.cabecera .barra-navegacion .item-menu a:hover {
+    color: #2A7AE4;
 }
 
 /*------------------------------------------------------------------------------*/

@@ -4,12 +4,20 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow:visible ;
+}
+
 /*----------------------------------------------------------------------*/
 /*Sección cabecera*/
 
 .cabecera {
-    margin: 1.6rem 10.8rem;
+    margin: 0rem;
+    padding: 1.6rem 10.8rem;
     display: flex;
+    position: sticky;
+    background: #F5F5F5;
+    top: 0rem;
 }
 
 .cabecera .barra-navegacion{
@@ -20,7 +28,7 @@ html {
 .cabecera .barra-navegacion ul {
     display: flex;
     width: 600px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .cabecera .barra-navegacion .item-menu-contacto-separado {
@@ -258,7 +266,7 @@ html {
 
 .formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-input {
     font-size: 1.2rem;
-    color: #A2A2A2;
+    color: black;
 }
 
 .formulario .formulario-contenedor .formulario-texto .formulario-titulo {
