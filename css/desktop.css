@@ -1,4 +1,9 @@
 
+:root{
+    --cor-de-fundo: #F5F5F5;
+    --color-titulos: #464646;
+}
+
 html {
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -18,6 +23,10 @@ body {
     position: sticky;
     background: #F5F5F5;
     top: 0rem;
+}
+
+.segundo-apellido {
+    display: inline;
 }
 
 .cabecera .barra-navegacion{
@@ -99,10 +108,7 @@ body {
 }
 
 .skills .skills-parrilla .skills-caja:hover {
-    position: relative;
-    height: 12.6rem;
-    margin-bottom: 2.4rem;
-    margin-top: 0.4rem;
+    transform: scale(1.1);
 }
 
 .skills .skills-parrilla .skills-caja:nth-child(1) {
@@ -131,10 +137,7 @@ body {
 }
 
 .hobbies .hobbies-parrilla .hobbies-caja:hover {
-    position: relative;
-    height: 12.6rem;
-    margin-bottom: 2.4rem;
-    margin-top: 0.4rem;
+    transform: scale(1.1);
 }
 
 .hobbies .hobbies-parrilla .hobbies-caja:nth-child(2n+1) {
@@ -154,8 +157,40 @@ body {
     padding-top: 8.2rem;
 }
 
+.formacion-parrilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4vw;
+}
+
 .formacion .formacion-titulo {
     font-size: 3.2rem;
+}
+
+.formacion .formacion-parrilla .formacion-caja .formacion-contenido{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+    box-shadow: 1px 1px 2px 1px var(--color-titulos);
+}
+
+.formacion .formacion-parrilla .formacion-caja:hover .formacion-contenido {
+    transform: rotateY(180deg);
+    box-shadow: -1px 1px 2px 1px var(--color-titulos);
+}
+
+.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-imagen-delante {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-imagen-atras {
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    background: white;
 }
 
 .formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-imagen {
@@ -169,6 +204,10 @@ body {
 
 .formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-caja-titulo h4{
     font-size: 2.2rem;
+}
+
+.formacion-imagen-atras {
+    padding: 1vw;
 }
 
 /*----------------------------------------------------------------------*/
@@ -203,7 +242,11 @@ body {
 
 .experiencia .experiencia-caja .experiencia-imagen{
     width: 56vw;
+    transition: 0.5s all;
+}
 
+.experiencia .experiencia-caja .experiencia-imagen:hover {
+    transform: scale(1.03);
 }
 
 .experiencia .experiencia-caja .experiencia-informacion {
@@ -214,39 +257,110 @@ body {
     margin-bottom: 3.2rem;
 }
 
-
-.experiencia .experiencia-informacion .experiencia-descripcion .experiencia-repositorio .experiencia-boton-repositorio{
-    transition: 0.3s all;
+.experiencia-repositorio .experiencia-boton-repositorio {
+    --color: #2A7AE4;
+    padding: 1.1rem;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
     cursor: pointer;
+    transition: .4s;
+    font-weight: 400;
+    border: 1px solid;
+    color: var(--color);
+    z-index: 1;
 }
-
-.experiencia .experiencia-informacion .experiencia-descripcion .experiencia-repositorio .experiencia-boton-repositorio:hover {
-    color: #2A7AE4;
-    border-color:#2A7AE4;
-    background: #e2e2e2;
+   
+.experiencia-boton-repositorio::before, .experiencia-boton-repositorio::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    transform: translate(-60%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
 }
-
-.experiencia .experiencia-informacion .experiencia-descripcion .experiencia-repositorio .experiencia-boton-repositorio:active {
+   
+.experiencia-boton-repositorio::before {
+    top: -1em;
+    left: -1em;
+}
+   
+.experiencia-boton-repositorio::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+   
+.experiencia-boton-repositorio:hover::before, .experiencia-boton-repositorio:hover::after {
+    height: 410px;
+    width: 410px;
+}
+   
+.experiencia-boton-repositorio:hover {
     color: white;
-    border-color:black;
-    background: black;
+}
+   
+.experiencia-boton-repositorio:active {
+    filter: brightness(.8);
+    transform: scale(1.1);
 }
 
-.experiencia .experiencia-informacion .experiencia-descripcion .experiencia-demo .experiencia-boton-demo {
-    transition: 0.3s all;
+.experiencia-demo .experiencia-boton-demo {
+    --color: #2A7AE4;
+    padding: 1.1rem;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
     cursor: pointer;
+    transition: .4s;
+    font-weight: 400;
+    border: 1px solid;
+    color: var(--color);
+    z-index: 1;
 }
-
-
-.experiencia .experiencia-informacion .experiencia-descripcion .experiencia-demo .experiencia-boton-demo:hover {
-    background: #1965c9;
+   
+.experiencia-boton-demo::before, .experiencia-boton-demo::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    transform: translate(-60%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
 }
- 
-.experiencia .experiencia-informacion .experiencia-descripcion .experiencia-demo .experiencia-boton-demo:active {
+   
+.experiencia-boton-demo::before {
+    top: -1em;
+    left: -1em;
+}
+   
+.experiencia-boton-demo::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+   
+.experiencia-boton-demo:hover::before, .experiencia-boton-demo:hover::after {
+    height: 410px;
+    width: 410px;
+}
+   
+.experiencia-boton-demo:hover {
     color: white;
-    border-color:black;
-    background: black;
 }
+   
+.experiencia-boton-demo:active {
+    filter: brightness(.8);
+    transform: scale(1.1);
+}
+
 /*-------------------------------------------------------------------------*/
 
 .formulario {
@@ -283,17 +397,54 @@ body {
     height: 54.6rem;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-enviar {
-    transition: 0.3s all;
+.formulario-datos .formulario-enviar {
+    --color: #2A7AE4;
+    padding: 1.1rem;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
     cursor: pointer;
+    transition: .4s;
+    font-weight: 400;
+    border: 1px solid;
+    color: var(--color);
+    z-index: 1;
+}
+   
+.formulario-datos .formulario-enviar::before, .formulario-datos .formulario-enviar::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    transform: translate(-60%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+   
+.formulario-datos .formulario-enviar::before {
+    top: -1em;
+    left: -1em;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-enviar:hover {
-    background: #1965c9;
+.formulario-datos .formulario-enviar::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
 }
- 
-.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-enviar:active {
+   
+.formulario-datos .formulario-enviar:hover::before, .formulario-enviar:hover::after {
+    height: 410px;
+    width: 410px;
+}
+   
+.formulario-datos .formulario-enviar:hover {
     color: white;
-    border-color:black;
-    background: black;
+}
+   
+.formulario-datos .formulario-enviar:active {
+    filter: brightness(.8);
+    transform: scale(1.1);
 }

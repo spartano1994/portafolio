@@ -46,6 +46,10 @@ a{
     font-size: 1.6rem;
 }
 
+.primer-apellido , .segundo-apellido{
+    display: none;
+}
+
 .cabecera .nombre-portafolio > img {
     width: auto;
     height:100%;
@@ -69,6 +73,10 @@ a{
 
 .cabecera .barra-navegacion .item-menu a:hover {
     color: #2A7AE4;
+}
+
+.cabecera .barra-navegacion .item-menu-contacto-separado {
+    display: inline;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -95,6 +103,7 @@ main {
     margin-bottom: 1.6rem;
     font-size: 2.2rem;
     text-align: start;
+    line-height: 1.5;
 }
 
 .titulo .titulo-divisor .titulo-contenedor .titulo-descripcion{
@@ -133,6 +142,7 @@ main {
     margin-bottom: 1.6rem;
     font-size: 1.4rem;
     text-align: justify;
+    line-height: 1.5;
 }
 
 /*---------------------------------------------------------------------------------*/
@@ -370,7 +380,7 @@ main {
     color: #464646;
 }
 
-.experiencia .experiencia-caja .experiencia-informacion .experiencia-descripcion .experiencia-repositorio .experiencia-boton-repositorio {
+.experiencia-boton-repositorio {
     box-sizing: border-box;
     padding: 1rem;
     color: #2A7AE4;
@@ -378,7 +388,7 @@ main {
     background: inherit;
 }
 
-.experiencia .experiencia-caja .experiencia-informacion .experiencia-descripcion .experiencia-demo .experiencia-boton-demo {
+.experiencia-boton-demo {
     box-sizing: border-box;
     margin-left: 1.6rem;
     padding: 1.1rem;

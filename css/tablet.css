@@ -12,6 +12,10 @@
     align-items: center;
 }
 
+.cabecera .primer-apellido{
+    display: inline;
+}
+
 .cabecera .barra-navegacion .item-menu-contacto-separado {
     font-weight: bold;
 }
