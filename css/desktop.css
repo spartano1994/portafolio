@@ -5,12 +5,13 @@
 }
 
 html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 body {
     overflow:visible ;
-    overflow-y: scroll;
-    scroll-behavior: smoot
+    
 }
 
 /*----------------------------------------------------------------------*/
@@ -29,18 +30,18 @@ body {
     display: inline;
 }
 
-.cabecera .barra-navegacion{
+.barra-navegacion{
     display: flex;
     justify-content: space-between;
 }
 
-.cabecera .barra-navegacion ul {
+.barra-navegacion ul {
     display: flex;
     width: 600px;
     justify-content: space-between;
 }
 
-.cabecera .barra-navegacion .item-menu-contacto-separado {
+.item-menu-contacto-separado {
     display: none;
 }
 
@@ -58,24 +59,24 @@ body {
     align-items: center;
 }
 
-.titulo .titulo-divisor .titulo-contenedor {
+.titulo-contenedor {
     width: 47vw;
 }
 
-.titulo .titulo-divisor .titulo-contenedor .titulo-biografia{
+.titulo-biografia{
     font-size: 5.2rem;
 }
 
-.titulo .titulo-divisor .titulo-contenedor .titulo-descripcion{
+.titulo-descripcion{
     font-size: 2.2rem;
 }
 
-.titulo .titulo-divisor .titulo-contenedor .titulo-redes{
+.titulo-redes{
     font-size: 1.6rem;
     font-weight:lighter;
 }
 
-.titulo .titulo-divisor .titulo-perfil {
+.titulo-perfil {
     box-sizing: initial;
     width: 30vw;
     height: fit-content;
@@ -88,7 +89,7 @@ body {
     padding-right: 10.8rem;
 }
 
-.acerca .acerca-contenedor .acerca-titulo {
+.acerca-titulo {
     font-size: 3.2rem;
 }
 
@@ -98,24 +99,24 @@ body {
     margin-right: 10.8rem;
 }
 
-.skills .skills-titulo {
+.skills-titulo {
     font-size: 3.2rem;
 }
 
-.skills .skills-parrilla .skills-caja {
+.skills-caja {
     width: 11vw;
     transition: 0.3s all;
 }
 
-.skills .skills-parrilla .skills-caja:hover {
+.skills-caja:hover {
     transform: scale(1.1);
 }
 
-.skills .skills-parrilla .skills-caja:nth-child(1) {
+.skills-caja:nth-child(1) {
     margin-left: 0rem;
 }
 
-.skills .skills-parrilla .skills-caja:nth-child(6) {
+.skills-caja:nth-child(6) {
     margin-right: 0rem;
 }
 
@@ -127,24 +128,24 @@ body {
     margin-bottom: 4.1rem;
 }
 
-.hobbies .hobbies-titulo {
+.hobbies-titulo {
     font-size: 3.2rem;
 }
 
-.hobbies .hobbies-parrilla .hobbies-caja {
+.hobbies-caja {
     width: 11vw;
     transition: 0.3s all;
 }
 
-.hobbies .hobbies-parrilla .hobbies-caja:hover {
+.hobbies-caja:hover {
     transform: scale(1.1);
 }
 
-.hobbies .hobbies-parrilla .hobbies-caja:nth-child(2n+1) {
+.hobbies-caja:nth-child(2n+1) {
     margin-right: 0.8rem;
 }
 
-.hobbies .hobbies-parrilla .hobbies-caja:nth-child(2n) {
+.hobbies-caja:nth-child(2n) {
     margin-left: 0.8rem;
 }
 
@@ -163,28 +164,28 @@ body {
     column-gap: 4vw;
 }
 
-.formacion .formacion-titulo {
+.formacion-titulo {
     font-size: 3.2rem;
 }
 
-.formacion .formacion-parrilla .formacion-caja .formacion-contenido{
+.formacion-contenido{
     position: relative;
     transform-style: preserve-3d;
     transition: all 0.5s linear;
     box-shadow: 1px 1px 2px 1px var(--color-titulos);
 }
 
-.formacion .formacion-parrilla .formacion-caja:hover .formacion-contenido {
+.formacion-caja:hover .formacion-contenido {
     transform: rotateY(180deg);
     box-shadow: -1px 1px 2px 1px var(--color-titulos);
 }
 
-.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-imagen-delante {
+.formacion-imagen-delante {
     position: absolute;
     backface-visibility: hidden;
 }
 
-.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-imagen-atras {
+.formacion-imagen-atras {
     position: absolute;
     transform: rotateY(180deg);
     backface-visibility: hidden;
@@ -193,16 +194,16 @@ body {
     background: white;
 }
 
-.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-imagen {
+.formacion-imagen {
     height: 28.6rem;
 }
 
-.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-imagen img {
+.formacion-imagen img {
     width: 15rem;
     height: auto;
 }
 
-.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-caja-titulo h4{
+.formacion-caja-titulo h4{
     font-size: 2.2rem;
 }
 
@@ -217,11 +218,11 @@ body {
     padding-right: 10.8rem;
 }
 
-.experiencia .experiencia-titulo {
+.experiencia-titulo {
     font-size: 3.2rem;
 }
 
-.experiencia .experiencia-caja {
+.experiencia-caja {
     display:flex;
     align-items: center;
     margin-top: 1.6rem;
@@ -231,7 +232,7 @@ body {
     flex-wrap: wrap;
 }
 
-.experiencia .experiencia-caja:nth-child(2n+1){
+.experiencia-caja:nth-child(2n+1){
     flex-direction: row-reverse;
     justify-content: space-between;
 }
@@ -240,16 +241,16 @@ body {
     margin-left: 0;
 }
 
-.experiencia .experiencia-caja .experiencia-imagen{
+.experiencia-imagen{
     width: 56vw;
     transition: 0.5s all;
 }
 
-.experiencia .experiencia-caja .experiencia-imagen:hover {
+.experiencia-imagen:hover {
     transform: scale(1.03);
 }
 
-.experiencia .experiencia-caja .experiencia-informacion {
+.experiencia-informacion {
     width: 19vw;
     margin-left: 2vw;
     display: flex;
@@ -257,7 +258,7 @@ body {
     margin-bottom: 3.2rem;
 }
 
-.experiencia-repositorio .experiencia-boton-repositorio {
+.experiencia-boton-repositorio {
     --color: #2A7AE4;
     padding: 1.1rem;
     background-color: transparent;
@@ -309,7 +310,7 @@ body {
     transform: scale(1.1);
 }
 
-.experiencia-demo .experiencia-boton-demo {
+.experiencia-boton-demo {
     --color: #2A7AE4;
     padding: 1.1rem;
     background-color: transparent;
@@ -367,37 +368,37 @@ body {
     padding: 10.8rem;
 }
 
-.formulario .formulario-contenedor {
+.formulario-contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.formulario .formulario-contenedor .formulario-texto {
+.formulario-texto {
     display: inline;
     width: 55%;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-input {
+.formulario-input {
     font-size: 1.2rem;
     color: black;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-titulo {
+.formulario-titulo {
     font-size: 3.2rem;
 }
 
-.formulario .formulario-contenedor .formulario-imagen-contenedor {
+.formulario-imagen-contenedor {
     display: inline;
     width: 43%;
 }
 
-.formulario .formulario-contenedor .formulario-imagen-contenedor > img {
+.formulario-imagen-contenedor > img {
     width: 100%;
     height: 54.6rem;
 }
 
-.formulario-datos .formulario-enviar {
+.formulario-enviar {
     --color: #2A7AE4;
     padding: 1.1rem;
     background-color: transparent;
