@@ -26,12 +26,14 @@ body {
 ol, ul,li {
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color: var(--cor-de-link);
 }
 
 /*----------------------------------------------------------------------*/
+                    /*Cabecera*/
 
 .cabecera {
     margin: 1.6rem;
@@ -41,7 +43,7 @@ a{
     z-index: 2;
 }
 
-.cabecera .nombre-portafolio {
+.nombre-portafolio {
     display: flex;
     font-size: 1.6rem;
 }
@@ -50,32 +52,32 @@ a{
     display: none;
 }
 
-.cabecera .nombre-portafolio > img {
+.img-perfil {
     width: auto;
     height:100%;
 }
 
-.cabecera .nombre-portafolio > h3 {
+.mi-nombre {
     font-size: 1.4rem;
 }
 
-.cabecera .barra-navegacion {
+.barra-navegacion {
     font-size: 1.4rem;
 }
 
-.cabecera .barra-navegacion ul {
+.item-contenedor {
     display: none;
 }
 
-.cabecera .barra-navegacion .item-menu a {
+.item-menu a {
     font-size: 1.4rem;
 }
 
-.cabecera .barra-navegacion .item-menu a:hover {
+.item-menu a:hover {
     color: #2A7AE4;
 }
 
-.cabecera .barra-navegacion .item-menu-contacto-separado {
+.item-menu-contacto-separado {
     display: inline;
 }
 
@@ -92,13 +94,13 @@ main {
     background-size:cover;
 }
 
-.titulo .titulo-divisor .titulo-perfil {
+.titulo-perfil {
     box-sizing: initial;
     width: 33vw;
     border-radius: 50%;
 }
 
-.titulo .titulo-divisor .titulo-contenedor .titulo-biografia{
+.titulo-biografia{
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;
     font-size: 2.2rem;
@@ -106,16 +108,17 @@ main {
     line-height: 1.5;
 }
 
-.titulo .titulo-divisor .titulo-contenedor .titulo-descripcion{
+.titulo-descripcion{
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;
     font-size: 1.4rem;
     color:  #464646;
     font-weight:lighter;
     text-align: justify;
+    line-height: 1.5;
 }
 
-.titulo .titulo-divisor .titulo-contenedor .titulo-redes{
+.titulo-redes{
     display: flex;
     justify-content: space-between;
     font-size: 1.4rem;
@@ -129,13 +132,13 @@ main {
     background: #EAF2FD;
 }
 
-.acerca .acerca-contenedor .acerca-titulo {
+.acerca-titulo {
     font-size: 2.2rem;
     font-weight: bold;
     color: #464646;
 }
 
-.acerca .acerca-contenedor .acerca-parrafo {
+.acerca-parrafo {
     box-sizing: border-box;
     margin-top: 1.6rem;
     color: #464646;
@@ -153,21 +156,21 @@ main {
     align-items: center;
 }
 
-.skills .skills-titulo {
+.skills-titulo {
     margin: 1.6rem;
     font-size: 2.2rem;
     flex-grow: 1;
     color: #464646;
 }
 
-.skills .skills-parrilla {
+.skills-parrilla {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     background: #F5F5F5;
 }
 
-.skills .skills-parrilla .skills-caja {
+.skills-caja {
     display: flex;
     justify-content: start;
     align-items: end;
@@ -180,24 +183,24 @@ main {
     box-shadow: 0px 3px 3px #464646;
 }
 
-.skills .skills-parrilla .skills-caja:nth-child(2n+1) {
+.skills-caja:nth-child(2n+1) {
     margin-right: 0.8rem;
 }
 
-.skills .skills-parrilla .skills-caja:nth-child(2n) {
+.skills-caja:nth-child(2n) {
     margin-left: 0.8rem;
 }
 
-.skills .skills-parrilla .skills-caja ul .skills-imagen .skills-python {
+.skills-python {
     width: 3.2rem;
     height: 3.2rem;
 }
 
-.skills .skills-parrilla .skills-caja ul {
+.skills-caja ul {
     margin: 1.6rem;
 }
 
-.skills .skills-parrilla .skills-caja ul .skills-nombre {
+.skills-nombre {
     margin-top: 0.8rem;
     font-size: 1.6rem;
     font-weight: bold;
@@ -211,21 +214,21 @@ main {
     align-items: center;
 }
 
-.hobbies .hobbies-titulo {
+.hobbies-titulo {
     margin: 1.6rem;
     font-size: 2.2rem;
     flex-grow: 1;
     color: #464646;
 }
 
-.hobbies .hobbies-parrilla {
+.hobbies-parrilla {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     background: #F5F5F5;
 }
 
-.hobbies .hobbies-parrilla .hobbies-caja {
+.hobbies-caja {
     display: flex;
     justify-content: start;
     align-items: end;
@@ -238,25 +241,25 @@ main {
     box-shadow: 0px 3px 3px #464646;
 }
 
-.hobbies .hobbies-parrilla .hobbies-caja:nth-child(2n+1) {
+.hobbies-caja:nth-child(2n+1) {
     margin-right: 0.8rem;
 }
 
-.hobbies .hobbies-parrilla .hobbies-caja:nth-child(2n) {
+.hobbies-caja:nth-child(2n) {
     margin-left: 0.8rem;
 }
 
-.hobbies .hobbies-parrilla .hobbies-caja ul {
+.hobbies-caja ul {
     margin: 1.6rem;
 }
 
-.hobbies .hobbies-parrilla .hobbies-caja ul .hobbies-nombre {
+.hobbies-nombre {
     margin-top: 0.8rem;
     font-size: 1.6rem;
     font-weight: bold;
 }
 
-.hobbies .hobbies-parrilla .hobbies-caja ul .hobbies-imagen .hobbies-salir {
+.hobbies-salir {
     width: 3.2rem;
     height: 3.2rem;
 }
@@ -273,7 +276,7 @@ main {
     background: #EAF2FD;
 }
 
-.formacion .formacion-titulo {
+.formacion-titulo {
     margin-bottom: 1.6rem;
     text-align: center;
     font-size: 2.2rem;
@@ -281,23 +284,23 @@ main {
     flex-grow: 1;
 }
 
-.formacion .formacion-parrilla {
+.formacion-parrilla {
     width: 100%;
 }
 
-.formacion .formacion-parrilla .formacion-caja {
+.formacion-caja {
     margin-top: 16px;
     width: 100%;
 }
 
-.formacion .formacion-parrilla .formacion-caja .formacion-contenido {
+.formacion-contenido {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
 }
 
-.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-imagen {
+.formacion-imagen {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -307,18 +310,18 @@ main {
     background: white;
 }
 
-.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-imagen img {
+.formacion-imagen img {
     width: 7rem;
     height:auto;
 }
 
-.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-caja-titulo {
+.formacion-caja-titulo {
     margin-top: 0.6rem;
     font-size: 1.6rem;
     color: #464646;
 }
 
-.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-caja-subtitulo {
+.formacion-caja-subtitulo {
     margin-top: 0.6rem;
     font-size: 1.4rem;
     color: #464646;
@@ -338,14 +341,14 @@ main {
     background: #F5F5F5;
 }
 
-.experiencia .experiencia-caja {
+.experiencia-caja {
     display: flex;
     flex-direction: column;
     width: 100%;
 
 }
 
-.experiencia .experiencia-titulo {
+.experiencia-titulo {
     text-align: center;
     font-size: 2.2rem;
     color: #464646;
@@ -353,26 +356,26 @@ main {
 }
 
         /*Ocultas 3 cajas*/
-.experiencia .experiencia-caja:nth-child(n+3) {
+.experiencia-caja:nth-child(n+3) {
     display: none;
 
 }
 
-.experiencia .experiencia-caja .experiencia-imagen{
+.experiencia-imagen{
     margin-top: 3.2rem;
 }
 
-.experiencia .experiencia-caja .experiencia-informacion {
+.experiencia-informacion {
     margin-bottom: 3.2rem;
 }
 
-.experiencia .experiencia-caja .experiencia-informacion .experiencia-caja-titulo {
+.experiencia-caja-titulo {
     margin-top: 0.6rem;
     font-size: 1.6rem;
     color: #464646;
 }
 
-.experiencia .experiencia-caja .experiencia-informacion .experiencia-caja-texto {
+.experiencia-caja-texto {
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
     font-size: 1.4rem;
@@ -410,36 +413,36 @@ main {
     background: #EAF2FD;
 }
 
-.formulario .formulario-contenedor {
+.formulario-contenedor {
     width: 100%;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-titulo {
+.formulario-titulo {
     text-align: start;
     font-size: 2.2rem;
     color: #464646;
     flex-grow: 1;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-pregunta {
+.formulario-pregunta {
     margin-top: 0.6rem;
     font-size: 1.4rem;
     font-weight: lighter;
     color: #464646;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-indicaciones {
+.formulario-indicaciones {
     margin-bottom: 1.6rem;
     font-size: 1.4rem;
     font-weight: lighter;
     color: #464646;
 }
 
-.formulario .formulario-contenedor .formulario-imagen-contenedor {
+.formulario-imagen-contenedor {
     display: none;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-input {
+.formulario-input {
     width: 100%;
     padding: 0.8rem;
     margin-top: 1.6rem;
@@ -449,12 +452,12 @@ main {
     background: white;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-input:focus {
+.formulario-input:focus {
     outline: none;
     box-shadow: 0px 3px 3px #2A7AE4;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-datos .span-nombre {
+.span-nombre {
     box-sizing: border-box;
     display: flex;
     padding-top: 0.8rem;
@@ -468,14 +471,15 @@ main {
     color: #A2A2A2;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-datos .span-nombre .formulario-input {
+.span-nombre .formulario-input {
     margin: 0px;
     padding: 0rem;
     color: black;
     padding: 0.8rem;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-datos .span-email {
+
+.span-email {
     box-sizing: border-box;
     display: flex;
     padding-top: 0.8rem;
@@ -489,14 +493,14 @@ main {
     color: #A2A2A2;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-datos .span-email .formulario-input {
+.span-email .formulario-input {
     margin: 0px;
     padding: 0rem;
     color: black;
     padding: 0.8rem;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-area {
+.formulario-area {
     width: 100%;
     height: 13.3rem;
     padding: 0.8rem;
@@ -506,18 +510,18 @@ main {
     font-family: "Raleway";
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-area::placeholder {
+.formulario-area::placeholder {
     font-family: 'Raleway';
     color: #A2A2A2;
 }
 
-main .formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-area:focus{
+.formulario-area:focus{
     outline: none;
     border: 0px solid #2A7AE4;
     box-shadow: 0px 3px 3px #2A7AE4;
 }
 
-.formulario .formulario-contenedor .formulario-texto .formulario-datos .formulario-enviar {
+.formulario-enviar {
     box-sizing: border-box;
     padding: 1.1rem;
     background: #2A7AE4;

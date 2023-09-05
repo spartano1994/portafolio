@@ -5,12 +5,12 @@
 }
 
 html {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
 }
 
 body {
     overflow:visible ;
+    overflow-y: scroll;
+    scroll-behavior: smoot
 }
 
 /*----------------------------------------------------------------------*/

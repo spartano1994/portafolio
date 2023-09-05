@@ -7,16 +7,16 @@
     display: flex;
 }
 
-.cabecera .nombre-portafolio {
+.nombre-portafolio {
     display: flex;
     align-items: center;
 }
 
-.cabecera .primer-apellido{
+.primer-apellido{
     display: inline;
 }
 
-.cabecera .barra-navegacion .item-menu-contacto-separado {
+.item-menu-contacto-separado {
     font-weight: bold;
 }
 
@@ -30,21 +30,22 @@
     padding-bottom: 3.2rem;
 }
 
-.titulo .titulo-divisor {
+.titulo-divisor {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
 }
 
-.titulo .titulo-divisor .titulo-perfil {
+.titulo-perfil {
     display: inline-block;
     width: 19vw;
     height: fit-content;
     border-radius: 50%;
 }
 
-.titulo .titulo-divisor .titulo-contenedor {
+.titulo-contenedor {
     width: 68vw;
 }
 
@@ -62,7 +63,7 @@
     margin-right: 3.2rem;
 }
 
-.skills .skills-parrilla .skills-caja {
+.skills-caja {
     margin: 0.8rem;
     margin-bottom: 3.2rem;
     width: 25vw;
@@ -76,34 +77,34 @@
     margin-right: 3.2rem;
 }
 
-.hobbies .hobbies-parrilla .hobbies-caja {
+.hobbies-caja {
     margin: 0.8rem;
     margin-bottom: 3.2rem;
     width: 25vw;
     height: 11.8rem;
 }
 
-.hobbies .hobbies-parrilla .hobbies-caja:nth-child(3n-2){
+.hobbies-caja:nth-child(3n-2){
     margin-left: 0;
 }
 
-.hobbies .hobbies-parrilla .hobbies-caja:nth-child(3n){
+.hobbies-caja:nth-child(3n){
     margin-right: 0;
 }
 
 
 /*----------------------------------------------------------------------*/
 
-.formacion .formacion-parrilla {
+.formacion-parrilla {
     display: flex;
 }
 
-.formacion .formacion-parrilla .formacion-caja:nth-child(2){
+.formacion-caja:nth-child(2){
     margin-left: 1.6rem;
     margin-right: 1.6rem;
 }
 
-.formacion .formacion-parrilla .formacion-caja .formacion-contenido .formacion-imagen img {
+.formacion-imagen img {
     width: 7rem;
     height: auto;
 }
@@ -111,11 +112,11 @@
 
 /*----------------------------------------------------------------------*/
 
-.experiencia .experiencia-caja .experiencia-imagen{
+.experiencia-imagen{
     margin-top: 1.6rem;
 }
 
-.experiencia .experiencia-caja .experiencia-informacion .experiencia-caja-titulo {
+.experiencia-caja-titulo {
     margin-top: 1.2rem;
 }
 
