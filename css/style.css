@@ -450,7 +450,7 @@ main {
     background-color: white;
     position: relative;
     margin-bottom: 2.2rem;
-    cursor: pointer;
+    cursor:text;
 }
 
 .label-campo{
@@ -465,7 +465,7 @@ main {
     background-color: transparent;
     color: #A2A2A2;
     transition: all 0.25s;
-    cursor: pointer;
+    cursor:text;
 }
 
 .formulario-input {
@@ -475,7 +475,7 @@ main {
     padding-top: 1.3rem;
     font-family: 'Raleway';
     background: white;
-    cursor: pointer;
+    cursor:text;
 }
 
 .formulario-input::placeholder {
