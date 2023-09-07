@@ -442,14 +442,50 @@ main {
     display: none;
 }
 
+.image-phone-container {
+    display: none;
+}
+
+.pregunta-contenedor {
+    background-color: white;
+    position: relative;
+    margin-bottom: 2.2rem;
+    cursor: pointer;
+}
+
+.label-campo{
+    box-sizing: border-box;
+    padding-top: 0.4rem;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    height: auto;
+    width: 100%;
+    font-size: 1.6rem;
+    background-color: transparent;
+    color: #A2A2A2;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
 .formulario-input {
     width: 100%;
-    padding: 0.8rem;
-    margin-top: 1.6rem;
-    margin-bottom: 1.6rem;
+    height: 4.2rem;
+    padding-left: 0.8rem;
+    padding-top: 1.3rem;
     font-family: 'Raleway';
-    color: black;
     background: white;
+    cursor: pointer;
+}
+
+.formulario-input::placeholder {
+    color: #A2A2A2;
+}
+
+
+.formulario-input:required:valid {
+    outline: none;
+    box-shadow: 0px 3px 3px green;
 }
 
 .formulario-input:focus {
@@ -457,54 +493,18 @@ main {
     box-shadow: 0px 3px 3px #2A7AE4;
 }
 
-.span-nombre {
-    box-sizing: border-box;
-    display: flex;
-    padding-top: 0.8rem;
-    margin-top: 1.6rem;
-    margin-bottom: 1.6rem;
-    height: auto;
-    flex-direction: column;
-    width: 100%;
-    background: white;
-    font-size: 1.2rem;
-    color: #A2A2A2;
-}
-
-.span-nombre .formulario-input {
-    margin: 0px;
-    padding: 0rem;
-    color: black;
-    padding: 0.8rem;
-}
-
-
-.span-email {
-    box-sizing: border-box;
-    display: flex;
-    padding-top: 0.8rem;
-    margin-top: 3.2rem;
-    margin-bottom: 1.6rem;
-    height: auto;
-    flex-direction: column;
-    width: 100%;
-    background: white;
-    font-size: 1.2rem;
-    color: #A2A2A2;
-}
-
-.span-email .formulario-input {
-    margin: 0px;
-    padding: 0rem;
-    color: black;
-    padding: 0.8rem;
+.formulario-input:not(:placeholder-shown) + .label-campo,
+.formulario-input:focus + .label-campo {
+  font-size: 1.1rem;
+  top: 0.25rem;
+  transition: all 0.25s;
 }
 
 .formulario-area {
     width: 100%;
     height: 13.3rem;
     padding: 0.8rem;
-    margin-top: 1.6rem;
+    margin-top: 0;
     margin-bottom: 1.6rem;
     resize: none;
     font-family: "Raleway";
@@ -518,7 +518,7 @@ main {
 .formulario-area:focus{
     outline: none;
     border: 0px solid #2A7AE4;
-    box-shadow: 0px 3px 3px #2A7AE4;
+    box-shadow: 0px 3px 3px green;
 }
 
 .formulario-enviar {

@@ -342,20 +342,24 @@
                         <h3 class="formulario-indicaciones">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
 
                         <form action="https://formsubmit.co/4dd6df08deb49ecc427ddbb9d3114b4d" class="formulario-datos" name="form" method="post">
-                            <label for="nombre">
-                                <span class="span-nombre">&nbsp Nombre<input class="formulario-input" type="text" name="nombre" autocomplete="off"></span>
-                            </label>
+                            <div class="pregunta-contenedor">
+                                <input class="formulario-input" id="nombre" type="text" title="Ej. Gerardo González García" placeholder="                               " name="nombre" autocomplete="off" required>
+                                <label for="nombre" class="label-campo">&nbsp Nombre
+                                </label>
+                            </div>
                             
-                            <label for="email">
-                                <span class="span-email">&nbsp e-mail<input class="formulario-input" type="email" name="email" autocomplete="off"></span>
-                            </label>
-                            
-                            <label for="asunto">
-                                <input class="formulario-input" type="text" name="asunto" placeholder="Asunto" autocomplete="off">
-                            </label>
+                            <div class="pregunta-contenedor">
+                                <input class="formulario-input" type="email" id="email" name="email" title="Ej. example@xmail.com" placeholder="                               " autocomplete="off" pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" title="Rellene este campo con un formato válido" required>
+                                <label for="email" class="label-campo">&nbsp e-mail</label>
+                            </div>
+
+                            <div class="pregunta-contenedor">
+                                <input class="formulario-input" type="text" id="asunto" name="asunto" title="Ej. Reunión del fin de semana" placeholder="                               " autocomplete="off" required>
+                                <label for="asunto" class="label-campo">&nbsp Asunto</label>
+                            </div>
 
                             <label for="mensaje">
-                                <textarea class="formulario-area" id="mensage" name="mensaje" placeholder="Mensaje"></textarea>
+                                <textarea class="formulario-area" id="mensage" name="mensaje" placeholder="Mensaje" required></textarea>
                             </label>
 
                             <button type="submit" class="formulario-enviar">Enviar mensaje</button>
