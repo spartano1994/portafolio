@@ -204,7 +204,7 @@
                             </li>
                             <div class="formacion-imagen-atras">
                                 <li class="formacion-caja-titulo"><h4>Formación Frontend</h4></li>
-                                <li class="formacion-caja-subtitulo"><p>En curso - Alura</p></li>
+                                <li class="formacion-caja-subtitulo"><p>2023 - Alura</p></li>
                             </div>
                             
                         </ul>
@@ -309,27 +309,28 @@
 
                 <div class="formulario-contenedor">
 
-                    <!--<div class="formulario-imagen-contenedor">
-                        <img class="formulario-imagen" src="assets\contact_image.png" alt="Imagen de un teléfono" title="Contáctame">
-                    </div> -->
-
                     <div class="image-phone-container">
                         <div class="formulario-imagen-phone">
                             
                             <div class="wallpaper-phone">
                                 <div class="card__date">
                                     <span class="time">14:34</span>
+
                                     <span class="date">Mar, 5 Septiembre</span>
+
                                   </div>
           
                                   <div class="popup">
                                         <p class="title">Llamada entrante de:</p>
+
                                         <p>Gerardo González García</p>
+
                                   </div>
+
                             </div>
                             
-                          
                         </div>
+
                     </div>
 
                     
@@ -337,41 +338,59 @@
                     <div class="formulario-texto">
                         <h2 class="formulario-titulo">Contacto</h2>
 
-                        <h3 class="formulario-pregunta">¿Quieres contactarme?</h3>
+                        <h3 class="formulario-pregunta">¿Quiere contactarme?</h3>
 
                         <h3 class="formulario-indicaciones">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
 
                         <form action="https://formsubmit.co/4dd6df08deb49ecc427ddbb9d3114b4d" class="formulario-datos" name="form" method="post">
                             <div class="pregunta-contenedor">
-                                <input class="formulario-input" id="nombre" type="text" title="Ej. Gerardo González García" placeholder="                               " name="nombre" autocomplete="off" required>
-                                <label for="nombre" class="label-campo">&nbsp Nombre
-                                </label>
+                                <input class="formulario-input" id="nombre" type="text" title="Ej. Gerardo González García" placeholder=" " name="nombre" autocomplete="off" required data-tipo="nombre">
+
+                                <label for="nombre" class="label-campo">&nbsp Nombre</label>
+                                                                
+                                <span class="input-message-error"></span>
+
+                                
+
+
                             </div>
                             
                             <div class="pregunta-contenedor">
-                                <input class="formulario-input" type="email" id="email" name="email" title="Ej. example@xmail.com" placeholder="                               " autocomplete="off" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="Rellene este campo con un formato válido" required>
+                                <input class="formulario-input" type="email" id="email" name="email" title="Ej. example@xmail.com" placeholder=" " autocomplete="off" title="Rellene este campo con un formato válido" required data-tipo="email">
+                                
                                 <label for="email" class="label-campo">&nbsp e-mail</label>
+                                         
+                                <span class="input-message-error"></span>
+
                             </div>
 
                             <div class="pregunta-contenedor">
-                                <input class="formulario-input" type="text" id="asunto" name="asunto" title="Ej. Reunión del fin de semana" placeholder="                               " autocomplete="off" required>
+                                <input class="formulario-input" type="text" id="asunto" name="asunto" title="Ej. Reunión del fin de semana" placeholder=" " autocomplete="off" required data-tipo="asunto">
+                                
                                 <label for="asunto" class="label-campo">&nbsp Asunto</label>
+                                          
+                                <span class="input-message-error"></span>
+                                
                             </div>
 
-                            <label for="mensaje">
-                                <textarea class="formulario-area" id="mensage" name="mensaje" placeholder="Mensaje" required></textarea>
-                            </label>
+                            <div class="pregunta-contenedor">
+                                <textarea class="formulario-area" id="message" name="mensaje" placeholder="Mensaje" minlength="4" required data-tipo="texto"></textarea>
+
+                                <span class="input-message-error input-area-error"></span>
+
+                            </div>
 
                             <button type="submit" class="formulario-enviar">Enviar mensaje</button>
 
                         </form>
+
                     </div>
+
                 </div>
+
             </section>
 
             <!-- Sección de Footer -->
-
-            <script src="validacion.js"></script>
 
         </main>
 
@@ -379,5 +398,6 @@
                 <p>&#169 2023 Gerardo González García <br> Challenge Oracle One - G5</p>
         </footer>
         
+        <script src="./app.js" type="module"></script>
     </body>
 </html>

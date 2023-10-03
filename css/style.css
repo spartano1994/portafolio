@@ -482,15 +482,10 @@ main {
     color: #A2A2A2;
 }
 
-
-.formulario-input:required:valid {
-    outline: none;
-    box-shadow: 0px 3px 3px green;
-}
-
 .formulario-input:focus {
     outline: none;
-    box-shadow: 0px 3px 3px #2A7AE4;
+    border-bottom: 1px;
+    border-color: #2A7AE4;
 }
 
 .formulario-input:not(:placeholder-shown) + .label-campo,
@@ -517,11 +512,10 @@ main {
 
 .formulario-area:focus{
     outline: none;
-    border: 0px solid #2A7AE4;
-    box-shadow: 0px 3px 3px green;
 }
 
 .formulario-enviar {
+    top: 4rem;
     box-sizing: border-box;
     padding: 1.1rem;
     background: #2A7AE4;
@@ -550,3 +544,24 @@ main {
 
 
 
+.input-message-error {
+    font-size: 1.2rem;
+    color: red;
+    font-family: inherit;
+    position: absolute;
+    left:0px;
+    top: 4.2rem;
+}
+
+.input-container-invalid {
+    border: 1px solid red;
+}
+
+.input-container-valid {
+    border: 1px solid green;
+}
+
+.input-area-error {
+    position: absolute;
+    top: 15.1rem;
+}
