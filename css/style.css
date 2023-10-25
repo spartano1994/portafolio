@@ -356,7 +356,7 @@ main {
 }
 
         /*Ocultas 3 cajas*/
-.experiencia-caja:nth-child(n+3) {
+.experiencia-caja:nth-child(n+4) {
     display: none;
 
 }
