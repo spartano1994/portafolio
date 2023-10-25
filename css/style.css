@@ -355,7 +355,7 @@ main {
     flex-grow: 1;
 }
 
-        /*Ocultas 3 cajas*/
+        /*Ocultas 2 cajas*/
 .experiencia-caja:nth-child(n+4) {
     display: none;
 
