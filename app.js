@@ -1,4 +1,4 @@
-import { validarInputs } from "./validacion.mjs";
+import { validarInputs } from "./validacion.js";
 
 
 /*Validar formulario de contacto*/
